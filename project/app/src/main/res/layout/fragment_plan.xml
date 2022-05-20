@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!--Calendar View-->
+
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="70dp"
+        android:dateTextAppearance="@android:style/TextAppearance.Medium"
+        android:weekDayTextAppearance="@android:style/TextAppearance.Medium"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="right"
+        android:clickable="true"
+        app:srcCompat="@drawable/add_128"
+        tools:layout_editor_absoluteX="346dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+
+</LinearLayout>

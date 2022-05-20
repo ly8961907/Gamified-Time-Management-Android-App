@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/bottom_layout_bg"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_vertical">
+
+
+
+    <TextView
+        android:id="@+id/txt_bottom_plan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:drawablePadding="@dimen/bottom_img_padding"
+        android:drawableTop="@drawable/button_plan_style"
+        android:gravity="center"
+        android:padding="@dimen/bottom_img_padding"
+        android:text="@string/txt_plan"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="@dimen/bottom_text_size"/>
+    <TextView
+        android:id="@+id/txt_bottom_today"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:drawablePadding="@dimen/bottom_img_padding"
+        android:drawableTop="@drawable/button_today_style"
+        android:gravity="center"
+        android:padding="@dimen/bottom_img_padding"
+        android:text="@string/txt_today"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="@dimen/bottom_text_size"/>
+    <TextView
+        android:id="@+id/txt_bottom_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:drawablePadding="@dimen/bottom_img_padding"
+        android:drawableTop="@drawable/button_control_style"
+        android:gravity="center"
+        android:padding="@dimen/bottom_img_padding"
+        android:text="@string/txt_control"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="@dimen/bottom_text_size"/>
+
+    <TextView
+        android:id="@+id/txt_bottom_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:drawablePadding="@dimen/bottom_img_padding"
+        android:drawableTop="@drawable/button_statistic_style"
+        android:gravity="center"
+        android:padding="@dimen/bottom_img_padding"
+        android:text="@string/txt_statistic"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="@dimen/bottom_text_size"/>
+
+    <TextView
+        android:id="@+id/txt_bottom_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:drawablePadding="@dimen/bottom_img_padding"
+        android:drawableTop="@drawable/button_more_style"
+        android:gravity="center"
+        android:padding="@dimen/bottom_img_padding"
+        android:text="@string/txt_more"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="@dimen/bottom_text_size"/>
+
+</LinearLayout>

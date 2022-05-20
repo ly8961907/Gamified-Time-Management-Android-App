@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_h"
+    android:background="@color/colorBlue"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/title_back"
+        android:gravity="center"
+        android:paddingLeft="@dimen/title_back_left"
+        android:paddingRight="@dimen/title_add_padding"
+        android:paddingBottom="@dimen/title_back_bottom"
+        android:paddingTop="@dimen/title_back_bottom"
+        />
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="name"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_text_size" />
+
+    <ImageView
+        android:id="@+id/title_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/title_add"
+        android:paddingTop="@dimen/title_add_bottom"
+        android:paddingBottom="@dimen/title_add_bottom"
+        android:paddingLeft="@dimen/title_add_padding"
+        android:paddingRight="@dimen/title_add_right"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/title_save"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/title_save"
+        android:paddingTop="@dimen/title_save_bootom"
+        android:paddingBottom="@dimen/title_save_bootom"
+        android:paddingLeft="@dimen/title_save_right"
+        android:paddingRight="@dimen/title_save_right"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/title_change"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_toLeftOf="@+id/title_more"
+        android:layout_centerVertical="true"
+        android:src="@drawable/title_histroy"
+        android:paddingTop="@dimen/title_add_padding"
+        android:paddingBottom="@dimen/title_add_padding"
+        android:paddingLeft="@dimen/title_histroy_right"
+        android:paddingRight="@dimen/title_histroy_right"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

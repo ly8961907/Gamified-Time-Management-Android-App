@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.example.myapplication.base.SetItemView
+                android:id="@+id/rl_quest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                myapp:isShowUnderLine="false"
+                myapp:leftIcon="@drawable/appquest"
+                myapp:leftText="任务"
+                myapp:rightIcon="@drawable/task_arrow"
+                myapp:textColor="@color/text_color_6"
+                myapp:textSize="16" />
+
+            <com.example.myapplication.base.SetItemView
+                android:id="@+id/rl_about"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="14dp"
+                myapp:leftIcon="@drawable/appabout"
+                myapp:leftText="关于"
+                myapp:rightIcon="@drawable/task_arrow"
+                myapp:textColor="@color/text_color_6"
+                myapp:textSize="16" />
+
+            <com.example.myapplication.base.SetItemView
+                android:id="@+id/rl_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                myapp:leftIcon="@drawable/appfeedback"
+                myapp:leftText="意见反馈"
+                myapp:rightIcon="@drawable/task_arrow"
+                myapp:textColor="@color/text_color_6"
+                myapp:textSize="16" />
+
+
+            <com.example.myapplication.base.SetItemView
+                android:id="@+id/rl_exit"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="30dp"
+                myapp:isShowUnderLine="false"
+                myapp:leftIcon="@drawable/appexit"
+                myapp:leftText="退出应用"
+                myapp:rightIcon="@drawable/task_arrow"
+                myapp:textColor="@color/text_color_6"
+                myapp:textSize="16" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

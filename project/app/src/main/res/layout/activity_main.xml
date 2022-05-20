@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_activity" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_layout_bg"
+            android:layout_below="@id/title_layout"
+            >
+            <LinearLayout
+                android:id="@+id/horizontalScrollViewItemContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/noPasterView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:visibility="gone"
+                    android:textSize="26sp"
+                    android:text="暂未获得贴纸"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/bottom_activity" />
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/horizontalScrollView"
+        android:layout_gravity="center"
+        android:background="#efe7e3">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
